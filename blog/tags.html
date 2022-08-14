@@ -1,0 +1,22 @@
+---
+layout: general
+title: Tags
+group: Blog
+---
+<div class="col-xl-8 col-lg-9 mt-2">
+
+	<hr />
+	<ul class="tag-list clearfix">
+		{% include libs/list_tags.html %}
+	</ul>
+	<hr />
+
+	{% for tag in site.tags %}
+		<h2 id="ref-{{ tag[0] | cgi_escape | remove:'%' }}">{{ tag[0] | escape }}</h2>
+		<ul>
+			{% assign list_pages = tag[1] %}
+			{% include libs/list_pages.html %}
+		</ul>
+	{% endfor %}
+	
+</div>

@@ -1,0 +1,8 @@
+_site/
+_deploy/
+_heroku/
+.bundle/
+Gemfile.lock
+.DS_Store
+Thumbs.db
+.jekyll-cache

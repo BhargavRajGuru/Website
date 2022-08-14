@@ -1,0 +1,128 @@
+# Configuration for Jekyll
+safe: false
+source: .
+destination: ./_site
+lsi: false
+kramdown:
+  input: GFM
+excerpt_separator: <!--more-->
+sass:
+  sass_dir: ./_sass
+
+# Configuration for site
+title: I Made a Thing!
+description: A personal log of the Things I've Made
+author: Twulz
+url: https://imade-athing.com
+baseurl: ""
+repository: "Twulz/Twulz.github.io"
+lang: EN-AU
+
+# Configuration for blog
+lang: en
+paginate: 10
+paginate_path: "/page:num/"
+columns: 3
+date_format: "%B %d, %Y"
+truncate_len: 200
+recent_posts: 10
+
+# Configuration for navbar
+navbar_list_large:
+- name: Blog
+  link: /
+  dropdown: &dropdown
+  - name: Archives
+    link: /blog/archives
+  - name: Categories
+    link: /blog/categories
+  - name: Tags
+    link: /blog/tags
+- name: Things
+  link: /things
+- name: Mechatronics
+  link: /things/mechatronics
+  dropdown: &dropdown
+  - name: All-In-One Server
+    link: /things/software/server-app
+  - name: Basil the DonkeyCar
+    link: /things/mechatronics/donkeycar
+  - name: Final Year Projects
+    link: /things/mechatronics/fyp
+  - name: Prusa i3 3D Printer
+    link: /things/mechatronics/printer
+  - name: Orrery
+    link: /things/mechatronics/orrery
+  - name: 4x4x4 LED Cube
+    link: /things/mechatronics/cube4x4x4
+  - name: Other Engineering Things
+    link: /things/mechatronics/othermecha
+- name: Software
+  link: /things/software
+  dropdown: &dropdown
+  - name: All-In-One Server
+    link: /things/software/server-app
+  - name: I Made a Thing! Blog
+    link: /things/software/blog
+  - name: Budget App
+    link: /things/software/budget-app
+  - name: Final Year Projects
+    link: /things/mechatronics/fyp
+- name: Garden
+  link: /things/garden
+  dropdown: &dropdown
+  - name: Vegepod
+    link: /things/garden/vegepod
+  - name: Growing from Seed
+    link: /things/garden/seedlings
+  - name: Other Garden Things
+    link: /things/garden/othergarden
+- name: Cosplay
+  link: /things/cosplay
+  dropdown: &dropdown
+  - name: Eivor from Assassin's Creed Valhalla
+    link: /things/cosplay/eivor
+  - name: Other Cosplay Things
+    link: /things/cosplay/othercosplay
+- name: Sewing
+  link: /things/sewing
+  dropdown: &dropdown
+  - name: Other Sewing Things
+    link: /things/sewing/othersewing
+- name: General Making
+  link: /things/making
+  dropdown: &dropdown
+  - name: Zombicide Board Game Painting
+    link: /things/making/zombicide
+  - name: Dark Souls Board Game Painting
+    link: /things/making/darksouls
+  - name: Horizon Zero Dawn Board Game Painting
+    link: /things/making/horizon
+  - name: Other General Making
+    link: /things/making/othermaking
+#- name: Sewing
+#  link: /sewing/
+#- name: Misc
+#  link: /misc/
+#- name: About
+#  link: /about/
+
+plugins:
+#  - jekyll-feed
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - README.md
+
+# Configuration for asides.html
+# asides:
+#     about: true
+#     search: false
+#     themes: false
+#     recent_posts: true
+#     archive_tabs: true
+#     tweets: true
+#     github: true
