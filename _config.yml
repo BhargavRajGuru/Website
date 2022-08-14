@@ -13,8 +13,8 @@ sass:
 title: I Made a Thing!
 description: A personal log of the Things I've Made
 author: Twulz
-url: https://imade-athing.com
-baseurl: ""
+url: ""
+baseurl: "/Website"
 repository: "Twulz/Twulz.github.io"
 lang: EN-AU
 
